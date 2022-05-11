@@ -17,12 +17,12 @@ MultiMath is the result of completing the course [TypeScript 4: Getting Started]
 
 2. Clone this repository:
 ```
-git clone ___________
+git clone https://github.com/g-esco101/multimath.git
 ```
 
 3. Move to the main project directory:
 ```
-cd MultiMath
+cd multimath
 ```
 
 4. Install packages referenced in package.json:
@@ -40,10 +40,12 @@ npm install -g typescript
 npm start
 ```
 
+The will run at http://localhost:8080/
+
 
 ## Creating project from an empty directory
 This section is intended for people taking the course and wish to create the project from an empty directory. It uses the latest versions of 
-the tools/dependencies instead of using the versions them in the course.
+the tools/dependencies instead of using the versions in the course.
 
 - Make a new directory to use as the main directory for the project (I named mine multimath):
 ```
@@ -55,7 +57,7 @@ mkdir multimath
 cd multimath
 ```
 
-- Initialize the project (this will create package.json file):
+- Initialize the project (this will create the package.json file):
 ```
 npm init -y
 ```
@@ -65,7 +67,7 @@ npm init -y
 npm install ts-loader typescript webpack webpack-cli webpack-dev-server
 ```
 
-- Add start script to the package.json using your IDE or text editor:
+- Add start script to the package.json file using your IDE or text editor:
 ```
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -94,10 +96,9 @@ cd public
 mkdir js
 ```
 You will have to move your js files here until the instructor sets up the tsconfig.json file in the course. When he does, you will have to update the tsconfig.json file to use "outDir": "./public/js". Don't forget this step!
-Note: The src attributes in your script tags will be different from those used by the instructor in the index.html file, e.g. use 
-<script src="./js/app.js" ></script> instead of <script src="/app/app.js" ></script>.
+Note: The src attributes in your script tags will be different from those used by the instructor in the index.html file, e.g. use <script src="./js/app.js" ></script> instead of <script src="/app/app.js" ></script>.
 
-- Install typescript:
+- Install typescript (this installs TypeScript globally):
 ```
 npm install -g typescript
 ```
